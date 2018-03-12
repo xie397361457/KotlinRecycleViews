@@ -28,6 +28,9 @@ class TestListAdapter constructor(var context : Context,var lists: MutableList<S
         return holder
     }
 
+    /**
+     * item点击事件
+     */
     private fun onItemClick(position : Int){
         context.showToast("position = " +position +",value = " + lists!!.get(position))
     }
