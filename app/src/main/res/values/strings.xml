@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">KotlinRecyclerviews</string>
+    <string name="recycleView_one">文本lists</string>
+    <string name="recycleView_two">图片lists</string>
+    <string name="recycleView_three">文本加图片组合lists</string>
+    <string name="recycleView_four">简单瀑布流</string>
+    <string name="recycleView_five">横向滑动</string>
+    <string name="recycleView_six">recycleView+系统上拉下拉刷新</string>
+    <string name="recycleView_seven">recycleView+pulltorefresh.library控件上拉下拉刷新</string>
+    <string name="recycleView_eight">recycleView+自定义上下拉刷新</string>
 </resources>

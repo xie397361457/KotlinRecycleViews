@@ -1,30 +1,57 @@
 package com.recyclerviews.kotlin
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.view.View
+import com.recyclerviews.kotlin.bitmapLists.BitmapListsActivity
+import com.recyclerviews.kotlin.textlists.TestListActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
+
+
+    override fun onClick(view: View?) {
+        when (view!!.id) {
+            R.id.one -> {
+                var intent = Intent(this, TestListActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.two -> {
+                var intent = Intent(this, BitmapListsActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.three -> {
+                showToast(resources.getString(R.string.recycleView_three))
+            }
+            R.id.four -> {
+                showToast(resources.getString(R.string.recycleView_four))
+            }
+            R.id.five -> {
+                showToast(resources.getString(R.string.recycleView_five))
+            }
+            R.id.six -> {
+                showToast(resources.getString(R.string.recycleView_six))
+            }
+            R.id.seven -> {
+                showToast(resources.getString(R.string.recycleView_seven))
+            }
+            R.id.eight -> {
+                showToast(resources.getString(R.string.recycleView_eight))
+            }
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        // Example of a call to a native method
-        sample_text.text = stringFromJNI()
-    }
-
-    /**
-     * A native method that is implemented by the 'native-lib' native library,
-     * which is packaged with this application.
-     */
-    external fun stringFromJNI(): String
-
-    companion object {
-
-        // Used to load the 'native-lib' library on application startup.
-        init {
-            System.loadLibrary("native-lib")
-        }
+        one.setOnClickListener(this)
+        two.setOnClickListener(this)
+        three.setOnClickListener(this)
+        four.setOnClickListener(this)
+        five.setOnClickListener(this)
+        six.setOnClickListener(this)
+        seven.setOnClickListener(this)
+        eight.setOnClickListener(this)
     }
 }
