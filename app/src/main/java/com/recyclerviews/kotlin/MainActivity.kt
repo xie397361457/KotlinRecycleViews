@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.recyclerviews.kotlin.bitmapLists.BitmapListsActivity
+import com.recyclerviews.kotlin.textAndBitmapList.TextAndBitmapActivity
 import com.recyclerviews.kotlin.textlists.TestListActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -22,7 +23,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.three -> {
-                showToast(resources.getString(R.string.recycleView_three))
+                var intent = Intent(this, TextAndBitmapActivity::class.java)
+                startActivity(intent)
             }
             R.id.four -> {
                 showToast(resources.getString(R.string.recycleView_four))
