@@ -22,7 +22,8 @@
         </activity>
         <activity android:name=".textlists.TestListActivity" />
         <activity android:name=".bitmapLists.BitmapListsActivity" />
-        <activity android:name=".textAndBitmapList.TextAndBitmapActivity"></activity>
+        <activity android:name=".textAndBitmapList.TextAndBitmapActivity" />
+        <activity android:name=".waterfallLists.WaterfallActivity"></activity>
     </application>
 
 </manifest>

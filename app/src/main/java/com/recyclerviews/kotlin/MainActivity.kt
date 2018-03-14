@@ -7,6 +7,7 @@ import android.view.View
 import com.recyclerviews.kotlin.bitmapLists.BitmapListsActivity
 import com.recyclerviews.kotlin.textAndBitmapList.TextAndBitmapActivity
 import com.recyclerviews.kotlin.textlists.TestListActivity
+import com.recyclerviews.kotlin.waterfallLists.WaterfallActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -27,7 +28,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.four -> {
-                showToast(resources.getString(R.string.recycleView_four))
+                var intent = Intent(this, WaterfallActivity::class.java)
+                startActivity(intent)
             }
             R.id.five -> {
                 showToast(resources.getString(R.string.recycleView_five))
