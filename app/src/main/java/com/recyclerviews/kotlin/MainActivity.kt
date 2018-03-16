@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.recyclerviews.kotlin.bitmapLists.BitmapListsActivity
+import com.recyclerviews.kotlin.systempullrefresh.SystemPullRefreshActivity
 import com.recyclerviews.kotlin.textAndBitmapList.TextAndBitmapActivity
 import com.recyclerviews.kotlin.textlists.TestListActivity
 import com.recyclerviews.kotlin.waterfallLists.WaterfallActivity
@@ -31,14 +32,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 var intent = Intent(this, WaterfallActivity::class.java)
                 startActivity(intent)
             }
-            R.id.five -> {
-                showToast(resources.getString(R.string.recycleView_five))
-            }
             R.id.six -> {
-                showToast(resources.getString(R.string.recycleView_six))
-            }
-            R.id.seven -> {
-                showToast(resources.getString(R.string.recycleView_seven))
+                var intent = Intent(this, SystemPullRefreshActivity::class.java)
+                startActivity(intent)
             }
             R.id.eight -> {
                 showToast(resources.getString(R.string.recycleView_eight))
@@ -53,9 +49,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         two.setOnClickListener(this)
         three.setOnClickListener(this)
         four.setOnClickListener(this)
-        five.setOnClickListener(this)
         six.setOnClickListener(this)
-        seven.setOnClickListener(this)
         eight.setOnClickListener(this)
     }
 }

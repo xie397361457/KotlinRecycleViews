@@ -30,20 +30,10 @@
             android:layout_height="wrap_content"
             android:text="@string/recycleView_four"/>
         <Button
-            android:id="@+id/five"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/recycleView_five"/>
-        <Button
             android:id="@+id/six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/recycleView_six"/>
-        <Button
-            android:id="@+id/seven"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/recycleView_seven"/>
         <Button
             android:id="@+id/eight"
             android:layout_width="wrap_content"

@@ -23,7 +23,8 @@
         <activity android:name=".textlists.TestListActivity" />
         <activity android:name=".bitmapLists.BitmapListsActivity" />
         <activity android:name=".textAndBitmapList.TextAndBitmapActivity" />
-        <activity android:name=".waterfallLists.WaterfallActivity"></activity>
+        <activity android:name=".waterfallLists.WaterfallActivity" />
+        <activity android:name=".systempullrefresh.SystemPullRefreshActivity" />
     </application>
 
 </manifest>
