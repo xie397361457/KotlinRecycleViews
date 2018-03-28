@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.recyclerviews.kotlin.bitmapLists.BitmapListsActivity
+import com.recyclerviews.kotlin.custompullrefresh.CustomPullRefeshActivity
 import com.recyclerviews.kotlin.systempullrefresh.SystemPullRefreshActivity
 import com.recyclerviews.kotlin.textAndBitmapList.TextAndBitmapActivity
 import com.recyclerviews.kotlin.textlists.TestListActivity
@@ -37,7 +38,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.eight -> {
-                showToast(resources.getString(R.string.recycleView_eight))
+                var intent = Intent(this, CustomPullRefeshActivity::class.java)
+                startActivity(intent)
             }
         }
     }

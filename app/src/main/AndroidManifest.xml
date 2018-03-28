@@ -25,6 +25,7 @@
         <activity android:name=".textAndBitmapList.TextAndBitmapActivity" />
         <activity android:name=".waterfallLists.WaterfallActivity" />
         <activity android:name=".systempullrefresh.SystemPullRefreshActivity" />
+        <activity android:name=".custompullrefresh.CustomPullRefeshActivity"></activity>
     </application>
 
 </manifest>
